@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>formulaire saisie livre</title>
+  <link rel="stylesheet" href="formulaire.css">
+ 
+</head>
+<body>
+		<h1> Ajouter un nouveau livre </h1>
+		<form method="post" action="inserer_livre.php">
+			<label for="titre">titre :</label>
+			<input type="text" name="titre" id="titre" 
+			  placeholder="Entrer le titre" required /></br>
+			<label for="auteur">auteur :</label>
+			<input type="text" name="auteur" id="auteur" required 
+			    placeholder="Entrer le nom de l'auteur" /> 
+			</br>
+			<label for="genre">genre :</label>
+			<select name="genre" id="genre">
+					<option value="roman" selected>roman</option>
+					<option value="poésie">poésie</option>
+					<option value="nouvelles">nouvelles</option>
+					<option value="autres">autres</option>
+			</select><br>
+			<label for="prix">prix :</label>
+			<input type="number" name="prix" id="prix"  
+			    placeholder="Entrer le prix du livre" /> 
+			</br>			
+			<input type="submit" value="Envoyer" />
+		</form>
+
+
+</body>
+</html>
